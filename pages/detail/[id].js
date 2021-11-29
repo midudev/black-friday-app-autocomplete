@@ -88,7 +88,7 @@ export default function Detail() {
             </div>
           )}
         </div>
-        <h3 className="font-black text-gray-800 md:text-3xl text-xl">
+        <h3 className="overflow-hidden overflow-ellipsis font-black text-gray-800 md:text-3xl text-xl">
           {title}
         </h3>
         <p className="md:text-lg text-gray-500 text-base">{description}</p>

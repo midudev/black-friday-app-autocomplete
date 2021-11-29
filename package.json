@@ -8,17 +8,18 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@algolia/autocomplete-core": "1.5.0",
     "next": "12.0.4",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "10.4.0",
     "eslint": "7.32.0",
     "eslint-config-next": "12.0.4",
-    "eslint-config-prettier": "^8.3.0",
-    "postcss": "^8.4.1",
-    "standard": "^16.0.4",
-    "tailwindcss": "^2.2.19"
+    "eslint-config-prettier": "8.3.0",
+    "postcss": "8.4.1",
+    "standard": "16.0.4",
+    "tailwindcss": "2.2.19"
   }
 }
