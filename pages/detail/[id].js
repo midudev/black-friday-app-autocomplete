@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import Search from '../../components/Search';
 
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -37,13 +38,14 @@ export default function Detail() {
           🔙 Volver a la portada
         </a>
       </Link>
+      <Search />
       <div className="w-full md:w-1/3 grid place-items-center p-8">
         <img
-          width="240"
-          height="240"
-          src={img}
           alt="tailwind logo"
           className="rounded-xl"
+          height="240"
+          src={img}
+          width="240"
         />
       </div>
       <div className="w-full md:w-2/3 flex flex-col space-y-2 p-3">
