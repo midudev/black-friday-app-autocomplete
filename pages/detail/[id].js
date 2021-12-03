@@ -6,7 +6,6 @@ import Search from '../../components/Search';
 const getRandomNumber = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 };
-
 const getRandomReviews = () => getRandomNumber(5, 100);
 const getRandomStars = () => Math.random() + getRandomNumber(3, 4);
 
@@ -34,11 +33,13 @@ export default function Detail() {
       rel="noopener noreferrer"
     >
       <Link href="/">
-        <a className="hover:bg-blue-100 p-2 rounded-lg">
+        <a className="relative hover:bg-blue-100 p-2 rounded-lg mt-24 mb-10 md:mt-12 md:mb-8">
           🔙 Volver a la portada
         </a>
       </Link>
-      <Search />
+      <div className="w-screen">
+        <Search marginStyle="mb-2" />
+      </div>
       <div className="w-full md:w-1/3 grid place-items-center p-8">
         <img
           alt="tailwind logo"
@@ -70,7 +71,7 @@ export default function Detail() {
               </span>
             </p>
           </div>
-          <div className="">
+          <div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               className="h-5 w-5 text-pink-500"
