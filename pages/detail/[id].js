@@ -38,7 +38,7 @@ export default function Detail() {
         </a>
       </Link>
       <div className="w-screen">
-        <Search marginStyle="mb-2" />
+        <Search />
       </div>
       <div className="w-full md:w-1/3 grid place-items-center p-8">
         <img
