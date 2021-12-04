@@ -3,6 +3,7 @@ import { createAutocomplete } from '@algolia/autocomplete-core'
 import AutocompleteItem from './AutocompleteItem'
 
 export default function Search(props) {
+  const { marginStyle } = props
   const [autocompleteState, setAutocompleteState] = useState({
     collections: [],
     isOpen: false
@@ -35,7 +36,7 @@ export default function Search(props) {
   })
 
   return (
-    <form ref={formRef} className="flex justify-center mb-20" {...formProps}>
+    <form ref={formRef} className={`flex justify-center ${marginStyle ? marginStyle : 'mb-20'}`} {...formProps}>
       <div className="flex relative p-1  bg-gradient-to-tr from-purple-600 to-blue-300 rounded-full w-2/6">
         <input ref={inputRef} className='flex-1 p-2 pl-4 rounded-full w-full' {...inputProps} />
         {
