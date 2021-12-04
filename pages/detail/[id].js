@@ -33,12 +33,12 @@ export default function Detail() {
       rel="noopener noreferrer"
     >
       <Link href="/">
-        <a className="relative hover:bg-blue-100 p-2 rounded-lg mt-24 mb-10 md:mt-12 md:mb-8">
+        <a className="relative hover:bg-blue-100 p-2 rounded-lg mt-24 md:mt-12 mb-8">
           🔙 Volver a la portada
         </a>
       </Link>
       <div className="w-screen">
-        <Search />
+        <Search marginStyle="mb-0" />
       </div>
       <div className="w-full md:w-1/3 grid place-items-center p-8">
         <img
