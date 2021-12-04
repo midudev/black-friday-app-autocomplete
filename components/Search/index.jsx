@@ -13,10 +13,10 @@ export default function Search(props) {
     onStateChange: ({ state }) => setAutocompleteState(state),
     getSources: () => [{
       sourceId: 'offers-next-api',
-      getItems: ({ query }) => {
+      getItems: async ({ query }) => {
         if (!!query) {
-          return fetch(`/api/search?q=${query}`)
-            .then(res => res.json())
+          const res = await fetch(`/api/search?q=${query}`)
+          return await res.json()
         }
       }
     }],
