@@ -1,10 +1,10 @@
-import Search from "components/Search.jsx";
-import Head from "next/head";
-import Image from "next/image";
+import Search from "components/Search"
+import Head from "next/head"
+import Image from "next/image"
 
-import Footer from "../components/Footer.jsx";
-import MainLogo from "../components/MainLogo.jsx";
-import HomeResults from "../components/HomeResults.jsx";
+import Footer from "../components/Footer.jsx"
+import MainLogo from "../components/MainLogo.jsx"
+import HomeResults from "../components/HomeResults.jsx"
 
 export default function Home() {
   return (
@@ -23,5 +23,5 @@ export default function Home() {
 
       <Footer />
     </div>
-  );
+  )
 }

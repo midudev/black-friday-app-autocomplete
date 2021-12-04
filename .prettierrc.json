@@ -1,1 +1,7 @@
-{}
+{
+  "bracketSameLine": true,
+  "endOfLine": "lf",
+  "printWidth": 200,
+  "semi": false,
+  "trailingComma": "none"
+}
